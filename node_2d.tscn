@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dtxw7iehfturj"]
+
+[ext_resource type="Script" path="res://Globale.gd" id="1_5tbqe"]
+[ext_resource type="Texture2D" uid="uid://cyq67w8y8fc00" path="res://krzak_trollface.png" id="1_q0kxl"]
+[ext_resource type="Script" path="res://CreateGasnica.gd" id="2_cxsqy"]
+[ext_resource type="Script" path="res://GasniceCount.gd" id="2_huoow"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5tbqe")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_right = 201.0
+offset_bottom = 40.0
+text = "Gaśnice:"
+script = ExtResource("2_huoow")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 8.0
+offset_top = 48.0
+offset_right = 86.0
+offset_bottom = 125.0
+texture_normal = ExtResource("1_q0kxl")
+script = ExtResource("2_cxsqy")
